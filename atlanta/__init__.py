@@ -11,6 +11,12 @@ class Atlanta(Jurisdiction):
     scrapers = {
         "people": AtlantaPersonScraper,
     }
+    terms = [{
+        'name': '2013-2017',
+        'start_year': 2013,
+        'end_year': 2017,
+        'sessions': ['2013'],
+    }]
 
     def get_organizations(self):
         return []
